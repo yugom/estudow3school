@@ -6,18 +6,54 @@
 </head>
 
 <body>
-    <img src="Imagens/Taqtile_logo.png" alt="Logo da Taqtile" style="float: right;">
+    <img src="Imagens/Taqtile_logo.png" alt="Logo da Taqtile" id="logo">
+    <ul>
+        <li>Home</li>
+        <li><a href="secondPage.htm">Página 2</a></li>
+        <li><a href="blocks.htm">Blocks</a></li>
+    </ul>
+    <br>
     <h1>Isso aqui é o meu título</h1>
     <p class="body">Isso aqui é o meu parágrafo <br> e eu vou pular esse primeiro parágrafo com BR e <b>deixar essa parte negrita</b></p>
     <h2>Agora eu tenho uma sessão 2</h2>
     <p class="body">Um paragráfo dentro do Heading 2 <mark>Isso está</mark> </p>
     <p class="body2">Um parágrafo com peso menor</p>
-    <a href="secondPage.htm">Clique para página 2</a>
     <br>
-    <img src="Imagens/Desk.jpg" alt="Mesa de Trabalho" usemap="#desk">
+    <!-- <img src="Imagens/Desk.jpg" alt="Mesa de Trabalho" usemap="#desk">
     <map name="desk">
         <area shape="poly" coords="436, 120, 849, 42, 954, 559, 534, 640" href="https://www.w3schools.com/html/html_images_imagemap.asp" alt="">
-    </map>
+    </map> -->
+    <!-- Teste de imagem em DIV
+    <div id="backgroundImage"></div> -->
+    <!-- Picture serve para especificar imagens dependendo do tamanho da tela
+    No <source> você coloca o tamanho mínimo de largura que ele manterá a imagem do <srcset>
+    Caso todos já tenham passado a largura ou o browser não suportar ele automaticamente pegará o item da <img>
+    <picture>
+        <source media="(min-width: )" srcset="">
+        <img src="" alt="">
+    </picture> -->
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Age</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Yugo</td>
+            <td>26</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Kenji</td>
+            <td>70</td>
+            <td>Taubaté</td>
+        </tr>
+        <tr>
+            <td>Yasuko</td>
+            <td>68</td>
+            <td>São Paulo</td>
+        </tr>
+    </table>
 </body>
 
 </html>

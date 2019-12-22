@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+#content-wrapper{
+    /* Fixar o footer através de calc */
+    /* min-height: calc(100vh - 70px); */
+
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -84px;
+}
+
+header{
+    background-color: lightcoral;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav{
+    background-color: lightblue;
+}
+
+ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+}
+
+li a:hover{
+    color: lightslategray;
+}
+
+#content-left{
+    /* Ao colocar o padding eu não precisei mas tratar o overflow, para o H1 pegar o background */
+    padding: 16px;
+    float: left;
+    background-color: lavenderblush;
+    width: 50%;
+}
+
+#content-right{
+    padding: 16px;
+    float: left;
+    width: 50%;
+    background-color: lightgreen;
+}
+
+footer{
+    overflow: hidden;
+    background-color: lightcyan;
+    font-size: 24px;
+    text-align: center;
+}
+
+.push{
+    height: 50px;
+}

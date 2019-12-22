@@ -12,14 +12,67 @@ h1{
     font-size: 14px;
 }
 
-a:link{
-    color: green;
+#logo{
+    width: 120px;
+    display: inline-flex;
 }
 
-a:visited{
-    color: pink;
+table, th, td{
+    margin-top: 20px;
+    border: 1px solid black;
+    /* Esse comendo de border-collapse: faz as bordas se juntarem em uma borda*/
+    border-collapse: collapse; 
 }
 
-a:hover{
-    color: red;
+th, td{
+    padding: 10px;
+    text-align: center;
 }
+
+th{
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(odd){
+    background-color: #fff;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    display: inline-block;
+}
+
+li{
+    float: left;
+    padding: 16px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    padding: inherit;
+    text-decoration: none;
+    color: white;   
+}
+
+li a:hover{
+    background-color: gray;
+}
+
+
+/* #backgroundImage{
+    background-image: url("Imagens/background.jpeg");
+    width: 1000px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
