@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    text-align: center;
+}
+
+#wrap-container{
+    /* inline-block permite ajustar o elemento. */
+    display: inline-block;
+    text-align: left;
+    width: 980px;
+    background-color: lightpink;
+}
+
+.section, .row{
+    background-color: lightslategrey;
+    width: 100%;
+    /* Usado overflow para que o pai consiga a altura dos filhos.
+    Outra forma seria setar o pai com float: left; porém isso pode causar
+    outros comportamentos indesejáveis. */
+    overflow: auto;
+}
+
+/* Quando se coloca float em um elemento ele para de se comportar naturalmente na árvore,
+por isso o parent dele não acompanha a altura */
+/* .col, #first-content-left{
+    background-color: lightgreen;
+    width: 50%;
+    float: left;
+    height: 100%;
+} */
+
+.one-col{
+    background-color: lightskyblue;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+.two-col:last-child {
+    background-color: lightyellow;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.two-col:first-child {
+    background-color: lightgreen;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+
+
+.input-radio-wrapper, .input-text-wrapper {
+    margin: 16px;
+}
+
+.input-radio-wrapper label, .input-text-wrapper label {
+    display: block;
+}
+
+input[type=text]{
+    width: 180px;
+    height: 32px;
+}
+
+select{
+    width: 180px;
+    height: 32px;
+    margin-top: 4px;
+}
+
+input[type=radio] {
+    margin-top: 8px;
+}
+
+input[type=radio] + span:after {
+    display: block;
+    content: '';
+}
+
+#button-wrapper{
+    overflow: auto;
+    text-align: center;
+}
+
+button{
+    margin: 16px;
+    width: 200px;
+    height: 36px;
+}
+
+label + input {
+    margin-top: 4px;
+}

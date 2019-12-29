@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formTest.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form action="">
+            <div id="wrap-container">
+                <div class="row">
+                    <div class="two-col">
+                        <div class="input-text-wrapper">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="input-text-wrapper">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone">
+                        </div>
+                        <div class="input-text-wrapper">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                        </div>
+                    </div>
+                    <div class="two-col">
+                        <div class="input-radio-wrapper">
+                            <label for="taxi-type">Qual taxi você deseja?</label>
+                            <input type="radio" name="taxi-type" value="car" /><span>Car</span>
+                            <input type="radio" name="taxi-type" value="van" /><span>Van</span>
+                            <input type="radio" name="taxi-type" value="tuktuk" /><span>Tuktuk</span>
+                        </div>
+                        <div class="input-radio-wrapper">
+                            <label for="extras">O que você precisa de extra?</label>
+                            <input type="radio" name="taxi-type" value="babyseat"> <span>Baby Seat</span> 
+                            <input type="radio" name="taxi-type" value="wheelchair"> <span>Wheelchair</span>
+                            <input type="radio" name="taxi-type" value="stocktip"> <span>Stock Tip</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="two-col">
+                        <div class="input-text-wrapper">
+                            <label for="name">Pickup Date/Time</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="input-text-wrapper">
+                            <label for="pickupPlace">Pickup Place</label>
+                            <select name="pickupPlace">
+                                <option value="paulista">Paulista</option>
+                                <option value="liberdade">Liberdade</option>
+                                <option value="pinheiros">Pinheiros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="two-col">
+                        <div class="input-text-wrapper">
+                            <label for="dropoff">Dropoff Place</label>
+                            <input type="text" name="dropoff">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one-col">
+                        <div class="input-text-wrapper">
+                            <label for="name">Instruções</label>
+                            <textarea name="instruction" id="" style="width: 100%; height: 100px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div id="button-wrapper">
+                    <button type="submit">Enviar formulário</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
